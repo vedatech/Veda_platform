@@ -1,0 +1,2485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>VedaPlatform: Файл /home/parallels/veda_platform_deploy/src/libvedawallet/libvedawallet.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon-veda.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">VedaPlatform
+   </div>
+   <div id="projectbrief">Криптоплатформа</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_587f883f88ee7e1f0654d91a0efbf173.html">libvedawallet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл libvedawallet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Функции кошелька  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;inttypes.h&quot;</code><br />
+<code>#include &quot;libvedawallet_global.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для libvedawallet.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="libvedawallet_8h__incl.png" border="0" usemap="#_2home_2parallels_2veda__platform__deploy_2src_2libvedawallet_2libvedawallet_8h" alt=""/></div>
+<map name="_2home_2parallels_2veda__platform__deploy_2src_2libvedawallet_2libvedawallet_8h" id="_2home_2parallels_2veda__platform__deploy_2src_2libvedawallet_2libvedawallet_8h">
+</map>
+</div>
+</div>
+<p><a href="libvedawallet_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a3dd8331fb7bfb38fea392b536d96c17d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dd8331fb7bfb38fea392b536d96c17d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a3dd8331fb7bfb38fea392b536d96c17d">LIBVEDAWALLET_NOERROR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a3dd8331fb7bfb38fea392b536d96c17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция отработала без ошибок <br /></td></tr>
+<tr class="separator:a3dd8331fb7bfb38fea392b536d96c17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb83f31386a01b5fdbf9288193783509"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb83f31386a01b5fdbf9288193783509"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a>&#160;&#160;&#160;20000</td></tr>
+<tr class="memdesc:acb83f31386a01b5fdbf9288193783509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Неизвестная ошибка <br /></td></tr>
+<tr class="separator:acb83f31386a01b5fdbf9288193783509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12aaf471caa500545f9ab43b3eaea83e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12aaf471caa500545f9ab43b3eaea83e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a12aaf471caa500545f9ab43b3eaea83e">LIBVEDAWALLET_ERROR_PARAMS</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 1</td></tr>
+<tr class="memdesc:a12aaf471caa500545f9ab43b3eaea83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Неверные входные параметры <br /></td></tr>
+<tr class="separator:a12aaf471caa500545f9ab43b3eaea83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe2ed157b08a779bd4ed5de27a3d150"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fe2ed157b08a779bd4ed5de27a3d150"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a2fe2ed157b08a779bd4ed5de27a3d150">LIBVEDAWALLET_ERROR_OPEN</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 2</td></tr>
+<tr class="memdesc:a2fe2ed157b08a779bd4ed5de27a3d150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка открытия контейнера <br /></td></tr>
+<tr class="separator:a2fe2ed157b08a779bd4ed5de27a3d150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5199f500769bfed883f7a91e8ec3526"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5199f500769bfed883f7a91e8ec3526"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ac5199f500769bfed883f7a91e8ec3526">LIBVEDAWALLET_ERROR_READING</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 3</td></tr>
+<tr class="memdesc:ac5199f500769bfed883f7a91e8ec3526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка чтения данных из контейнера <br /></td></tr>
+<tr class="separator:ac5199f500769bfed883f7a91e8ec3526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaeaec23875cc121f6ca700fdf5638b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaeaec23875cc121f6ca700fdf5638b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#acaeaec23875cc121f6ca700fdf5638b9">LIBVEDAWALLET_ERROR_WRITING</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 4</td></tr>
+<tr class="memdesc:acaeaec23875cc121f6ca700fdf5638b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка записи данных в контейнер <br /></td></tr>
+<tr class="separator:acaeaec23875cc121f6ca700fdf5638b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90017989ae03eca37f4336bbd05aa56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90017989ae03eca37f4336bbd05aa56"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ad90017989ae03eca37f4336bbd05aa56">LIBVEDAWALLET_ERROR_MEMORY</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 5</td></tr>
+<tr class="memdesc:ad90017989ae03eca37f4336bbd05aa56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка выделения памяти <br /></td></tr>
+<tr class="separator:ad90017989ae03eca37f4336bbd05aa56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1446740e8ebabcd33bcd0e0ef1359fc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1446740e8ebabcd33bcd0e0ef1359fc5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a1446740e8ebabcd33bcd0e0ef1359fc5">LIBVEDAWALLET_ERROR_CRYPTLIBS</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 6</td></tr>
+<tr class="memdesc:a1446740e8ebabcd33bcd0e0ef1359fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка инициализации библиотеки <br /></td></tr>
+<tr class="separator:a1446740e8ebabcd33bcd0e0ef1359fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421e6324e0bde912cf3a330309f22fc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a421e6324e0bde912cf3a330309f22fc8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a421e6324e0bde912cf3a330309f22fc8">LIBVEDAWALLET_ERROR_CRYPTINIT</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 7</td></tr>
+<tr class="memdesc:a421e6324e0bde912cf3a330309f22fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка инициализации криптоалгоритма <br /></td></tr>
+<tr class="separator:a421e6324e0bde912cf3a330309f22fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f16842ac9296bd6e2b37bb54176f98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f16842ac9296bd6e2b37bb54176f98"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a59f16842ac9296bd6e2b37bb54176f98">LIBVEDAWALLET_ERROR_CRYPTPGEN</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 8</td></tr>
+<tr class="memdesc:a59f16842ac9296bd6e2b37bb54176f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка генерации <br /></td></tr>
+<tr class="separator:a59f16842ac9296bd6e2b37bb54176f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72ba187aca61c55bc7595f4e749d7b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac72ba187aca61c55bc7595f4e749d7b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ac72ba187aca61c55bc7595f4e749d7b4">LIBVEDAWALLET_ERROR_CRYPT</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 9</td></tr>
+<tr class="memdesc:ac72ba187aca61c55bc7595f4e749d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка криптоалгоритма <br /></td></tr>
+<tr class="separator:ac72ba187aca61c55bc7595f4e749d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c408efcf75d593e816a3bdf6f147f8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c408efcf75d593e816a3bdf6f147f8e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a1c408efcf75d593e816a3bdf6f147f8e">LIBVEDAWALLET_ERROR_ELNFOUND</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 10</td></tr>
+<tr class="memdesc:a1c408efcf75d593e816a3bdf6f147f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка элемент не найден <br /></td></tr>
+<tr class="separator:a1c408efcf75d593e816a3bdf6f147f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cc2a97f988ec658cfe53d93d0d205d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02cc2a97f988ec658cfe53d93d0d205d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a02cc2a97f988ec658cfe53d93d0d205d">LIBVEDAWALLET_ERROR_SEND</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 11</td></tr>
+<tr class="memdesc:a02cc2a97f988ec658cfe53d93d0d205d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка при отправке данных <br /></td></tr>
+<tr class="separator:a02cc2a97f988ec658cfe53d93d0d205d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ff14ca1c619938fa19bcfbd32c7893"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ff14ca1c619938fa19bcfbd32c7893"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ae4ff14ca1c619938fa19bcfbd32c7893">LIBVEDAWALLET_ERROR_RECV</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 12</td></tr>
+<tr class="memdesc:ae4ff14ca1c619938fa19bcfbd32c7893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка при получении данных <br /></td></tr>
+<tr class="separator:ae4ff14ca1c619938fa19bcfbd32c7893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6b1934711afb9ab0f07d6856ab8906"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c6b1934711afb9ab0f07d6856ab8906"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a2c6b1934711afb9ab0f07d6856ab8906">LIBVEDAWALLET_ERROR_RECVBADCODE</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 13</td></tr>
+<tr class="memdesc:a2c6b1934711afb9ab0f07d6856ab8906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка при получении - получен код ошибки <br /></td></tr>
+<tr class="separator:a2c6b1934711afb9ab0f07d6856ab8906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ff0cd497986b027915d577a05ccc02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ff0cd497986b027915d577a05ccc02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#af0ff0cd497986b027915d577a05ccc02">LIBVEDAWALLET_ERROR_TRNCREATE</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 14</td></tr>
+<tr class="memdesc:af0ff0cd497986b027915d577a05ccc02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка при создании транзакции <br /></td></tr>
+<tr class="separator:af0ff0cd497986b027915d577a05ccc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66046be10ee5e72b39003a482a92318"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa66046be10ee5e72b39003a482a92318"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#aa66046be10ee5e72b39003a482a92318">LIBVEDAWALLET_ERROR_JSON_INCORRECT</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 15</td></tr>
+<tr class="memdesc:aa66046be10ee5e72b39003a482a92318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка - неверная структура JSON. <br /></td></tr>
+<tr class="separator:aa66046be10ee5e72b39003a482a92318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106de3f9167a8e3e1a6db3f8337aa83a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a106de3f9167a8e3e1a6db3f8337aa83a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a106de3f9167a8e3e1a6db3f8337aa83a">LIBVEDAWALLET_ERROR_EXCEPTION</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 16</td></tr>
+<tr class="memdesc:a106de3f9167a8e3e1a6db3f8337aa83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка - исключение <br /></td></tr>
+<tr class="separator:a106de3f9167a8e3e1a6db3f8337aa83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e00c558d1bf433db449a1d916904ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5e00c558d1bf433db449a1d916904ac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#aa5e00c558d1bf433db449a1d916904ac">LIBVEDAWALLET_ERROR_GET_SAT</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 17</td></tr>
+<tr class="memdesc:aa5e00c558d1bf433db449a1d916904ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка получение списка соседей с узла <br /></td></tr>
+<tr class="separator:aa5e00c558d1bf433db449a1d916904ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8a8d69008c92e4ce2417eb4d1202aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e8a8d69008c92e4ce2417eb4d1202aa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a3e8a8d69008c92e4ce2417eb4d1202aa">LIBVEDAWALLET_ERROR_SQL</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 18</td></tr>
+<tr class="memdesc:a3e8a8d69008c92e4ce2417eb4d1202aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка формирования SQL запроса <br /></td></tr>
+<tr class="separator:a3e8a8d69008c92e4ce2417eb4d1202aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449a94261ff4c1ad046729952cdf5ee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a449a94261ff4c1ad046729952cdf5ee0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a449a94261ff4c1ad046729952cdf5ee0">LIBVEDAWALLET_ERROR_SQL_PARAMS</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 19</td></tr>
+<tr class="memdesc:a449a94261ff4c1ad046729952cdf5ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка параметров SQL. <br /></td></tr>
+<tr class="separator:a449a94261ff4c1ad046729952cdf5ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1377d3a4c1bf4fee2a7a2664ec0e9cf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1377d3a4c1bf4fee2a7a2664ec0e9cf4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a1377d3a4c1bf4fee2a7a2664ec0e9cf4">LIBVEDAWALLET_ERROR_SQL_WRITE</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 20</td></tr>
+<tr class="memdesc:a1377d3a4c1bf4fee2a7a2664ec0e9cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка записи в БД <br /></td></tr>
+<tr class="separator:a1377d3a4c1bf4fee2a7a2664ec0e9cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d075382daf726ffa7fa99e267aa761"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32d075382daf726ffa7fa99e267aa761"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a32d075382daf726ffa7fa99e267aa761">LIBVEDAWALLET_ERROR_SQL_READ</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 21</td></tr>
+<tr class="memdesc:a32d075382daf726ffa7fa99e267aa761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка чтения из БД <br /></td></tr>
+<tr class="separator:a32d075382daf726ffa7fa99e267aa761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa10d6899b88b3390a6a9b0836e8083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaa10d6899b88b3390a6a9b0836e8083"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#abaa10d6899b88b3390a6a9b0836e8083">LIBVEDAWALLET_ERROR_SQL_OPEN</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 22</td></tr>
+<tr class="memdesc:abaa10d6899b88b3390a6a9b0836e8083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка открытия БД <br /></td></tr>
+<tr class="separator:abaa10d6899b88b3390a6a9b0836e8083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d8381fae2027c8a8ffab3619c42ebe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9d8381fae2027c8a8ffab3619c42ebe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ad9d8381fae2027c8a8ffab3619c42ebe">LIBVEDAWALLET_ERROR_COMPARE</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 23</td></tr>
+<tr class="memdesc:ad9d8381fae2027c8a8ffab3619c42ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка сравнения <br /></td></tr>
+<tr class="separator:ad9d8381fae2027c8a8ffab3619c42ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bc65b6f9b96e08a27510c36a07c277"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bc65b6f9b96e08a27510c36a07c277"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#af8bc65b6f9b96e08a27510c36a07c277">LIBVEDAWALLET_ERROR_SYSTEM</a>&#160;&#160;&#160;<a class="el" href="libvedawallet_8h.html#acb83f31386a01b5fdbf9288193783509">LIBVEDAWALLET_ERROR</a> + 24</td></tr>
+<tr class="memdesc:af8bc65b6f9b96e08a27510c36a07c277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка системная <br /></td></tr>
+<tr class="separator:af8bc65b6f9b96e08a27510c36a07c277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a33485d857e6d9d2f210bff01c23295cd"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a33485d857e6d9d2f210bff01c23295cd">veda_wallet_register_1</a> (uint64_t wstk, const char *pass, int pass_len, const char *secret, int secret_len, const char *cert, int cert_len, int &amp;error)</td></tr>
+<tr class="memdesc:a33485d857e6d9d2f210bff01c23295cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация кошелька этап 1.  <a href="#a33485d857e6d9d2f210bff01c23295cd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a33485d857e6d9d2f210bff01c23295cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a7c89187058f626f11ba0536a32aca"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a56a7c89187058f626f11ba0536a32aca">veda_wallet_register_2</a> (uint64_t wstk, const char *email_code, int code_len, int &amp;error)</td></tr>
+<tr class="memdesc:a56a7c89187058f626f11ba0536a32aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация кошелька этап 2.  <a href="#a56a7c89187058f626f11ba0536a32aca">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56a7c89187058f626f11ba0536a32aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230">veda_wallet_open</a> (uint64_t wstk, const char *cryptobox_name, int cryptobox_name_len, const char *pass, int pass_len, const char *secret, int secret_len)</td></tr>
+<tr class="memdesc:a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть локальный кошелек  <a href="#a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98b84ab3ac5a3906e5ea6fd3665e35e"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ac98b84ab3ac5a3906e5ea6fd3665e35e">veda_wallet_authorization</a> (uint64_t wstk, const char *cryptobox_name, int cryptobox_name_len, const char *pass, int pass_len, const char *secret, int secret_len, int &amp;error)</td></tr>
+<tr class="memdesc:ac98b84ab3ac5a3906e5ea6fd3665e35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторизация кошелька  <a href="#ac98b84ab3ac5a3906e5ea6fd3665e35e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac98b84ab3ac5a3906e5ea6fd3665e35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51df09e72e72e9e1a6df9efe5adb05ea"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a51df09e72e72e9e1a6df9efe5adb05ea">veda_wallet_form_token_mas</a> (uint64_t wstk, char **token_mas, uint64_t &amp;token_mas_len)</td></tr>
+<tr class="memdesc:a51df09e72e72e9e1a6df9efe5adb05ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирование массива токенов из криптоконтейнера  <a href="#a51df09e72e72e9e1a6df9efe5adb05ea">Подробнее...</a><br /></td></tr>
+<tr class="separator:a51df09e72e72e9e1a6df9efe5adb05ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538969a4179a4d8f1b5e40db55c6d82a"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a538969a4179a4d8f1b5e40db55c6d82a">veda_wallet_init_balance</a> (uint64_t wstk, const char *token_mas_in, uint64_t token_mas_len_in, char **token_mas_out, uint64_t &amp;token_mas_len_out, char **balance, uint64_t &amp;token_cnt, uint64_t &amp;marked_token_cnt)</td></tr>
+<tr class="memdesc:a538969a4179a4d8f1b5e40db55c6d82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка токенов и запрос баланса  <a href="#a538969a4179a4d8f1b5e40db55c6d82a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a538969a4179a4d8f1b5e40db55c6d82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5399687c1e74abba377f464bdaa2b7"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a7a5399687c1e74abba377f464bdaa2b7">veda_wallet_refresh_balance</a> (uint64_t wstk, const char *token_mas_in, uint64_t token_mas_len_in, char **token_mas_out, uint64_t &amp;token_mas_len_out, char **balance, uint64_t &amp;token_cnt, uint64_t &amp;marked_token_cnt)</td></tr>
+<tr class="memdesc:a7a5399687c1e74abba377f464bdaa2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление баланса кошелька  <a href="#a7a5399687c1e74abba377f464bdaa2b7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7a5399687c1e74abba377f464bdaa2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43edaf2962a1f9ce1d0f507637fbb3e1"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a43edaf2962a1f9ce1d0f507637fbb3e1">veda_wallet_get_cnt_trn_out</a> (uint64_t wstk, const char *wid_sender, uint64_t &amp;num_trn)</td></tr>
+<tr class="memdesc:a43edaf2962a1f9ce1d0f507637fbb3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение номера последней исходящей транзакиис аккаунта (с кошелька)  <a href="#a43edaf2962a1f9ce1d0f507637fbb3e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43edaf2962a1f9ce1d0f507637fbb3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05f40a5843d5a840b384783e45ffd34"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ab05f40a5843d5a840b384783e45ffd34">veda_wallet_init_library</a> (uint64_t &amp;hlib)</td></tr>
+<tr class="memdesc:ab05f40a5843d5a840b384783e45ffd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация библиотеки VEDA_WALLET вызывается один раз перед выполнением основных инструкий программы (например, в начале функции main())  <a href="#ab05f40a5843d5a840b384783e45ffd34">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab05f40a5843d5a840b384783e45ffd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be1c1c02ea8dbf150db2e340f3318d5"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a3be1c1c02ea8dbf150db2e340f3318d5">veda_wallet_stop_library</a> (uint64_t &amp;hlib)</td></tr>
+<tr class="memdesc:a3be1c1c02ea8dbf150db2e340f3318d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение библиотеки VEDA_WALLET вызывается один раз перед завершением программы (например, в конце функции main())  <a href="#a3be1c1c02ea8dbf150db2e340f3318d5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3be1c1c02ea8dbf150db2e340f3318d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed6d056a5ad24653a44706e57da8ca3"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a6ed6d056a5ad24653a44706e57da8ca3">veda_wallet_init</a> (uint64_t hlib, const char *dir, const char *ip, uint64_t &amp;wstk)</td></tr>
+<tr class="memdesc:a6ed6d056a5ad24653a44706e57da8ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация кошелька перед инициализацией кошелька убедитесь, что была проведена инициализация библиотеки veda_wallet_init_crypto_engine.  <a href="#a6ed6d056a5ad24653a44706e57da8ca3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6ed6d056a5ad24653a44706e57da8ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a47991afd17d346babef0e72706bdc1"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a7a47991afd17d346babef0e72706bdc1">veda_wallet_free</a> (uint64_t &amp;wstk)</td></tr>
+<tr class="memdesc:a7a47991afd17d346babef0e72706bdc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение кошелька  <a href="#a7a47991afd17d346babef0e72706bdc1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7a47991afd17d346babef0e72706bdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd5e002c57bb7a2ae3c3be41b4ef938"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#adfd5e002c57bb7a2ae3c3be41b4ef938">veda_wallet_CryptoBoxFree</a> (uint64_t wstk)</td></tr>
+<tr class="memdesc:adfd5e002c57bb7a2ae3c3be41b4ef938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение дескриптора криптоконтейнера  <a href="#adfd5e002c57bb7a2ae3c3be41b4ef938">Подробнее...</a><br /></td></tr>
+<tr class="separator:adfd5e002c57bb7a2ae3c3be41b4ef938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f8dcba6fb87380a5173490c4943e43"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a41f8dcba6fb87380a5173490c4943e43">veda_wallet_CryptoBoxDropBox</a> (uint64_t wstk)</td></tr>
+<tr class="memdesc:a41f8dcba6fb87380a5173490c4943e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление файла криптоконтейнера  <a href="#a41f8dcba6fb87380a5173490c4943e43">Подробнее...</a><br /></td></tr>
+<tr class="separator:a41f8dcba6fb87380a5173490c4943e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad5204b274111115cecef9f4e7926db"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a0ad5204b274111115cecef9f4e7926db">veda_wallet_close_connection</a> (uint64_t wstk)</td></tr>
+<tr class="memdesc:a0ad5204b274111115cecef9f4e7926db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрытие соединения с нодой  <a href="#a0ad5204b274111115cecef9f4e7926db">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0ad5204b274111115cecef9f4e7926db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9943ff331b25d7896958eb83818af84b"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a9943ff331b25d7896958eb83818af84b">veda_wallet_free_param_str</a> (char **param)</td></tr>
+<tr class="memdesc:a9943ff331b25d7896958eb83818af84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение памяти  <a href="#a9943ff331b25d7896958eb83818af84b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9943ff331b25d7896958eb83818af84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff45b53a2942cdd9de005611840d7ff"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#afff45b53a2942cdd9de005611840d7ff">veda_wallet_get_trn_list_by_wid</a> (uint64_t wstk, char **trn_list, int &amp;trn_list_size)</td></tr>
+<tr class="memdesc:afff45b53a2942cdd9de005611840d7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение списка транзакций по ID кошелька  <a href="#afff45b53a2942cdd9de005611840d7ff">Подробнее...</a><br /></td></tr>
+<tr class="separator:afff45b53a2942cdd9de005611840d7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0b0fa1aa7a0cac344686dec06d42a1"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a5a0b0fa1aa7a0cac344686dec06d42a1">veda_wallet_get_trn_list_from_local_db</a> (uint64_t wstk, char **trn_list, int &amp;trn_list_size)</td></tr>
+<tr class="memdesc:a5a0b0fa1aa7a0cac344686dec06d42a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение списка транзакций из своего хранилища  <a href="#a5a0b0fa1aa7a0cac344686dec06d42a1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5a0b0fa1aa7a0cac344686dec06d42a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5efe60e6478294631bdaa3caaab4cc"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a5b5efe60e6478294631bdaa3caaab4cc">veda_wallet_get_trn_json_by_tid</a> (uint64_t wstk, const char *tid, char **jtrn, int &amp;jtrn_len)</td></tr>
+<tr class="memdesc:a5b5efe60e6478294631bdaa3caaab4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение json-описания транзакции по ID.  <a href="#a5b5efe60e6478294631bdaa3caaab4cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b5efe60e6478294631bdaa3caaab4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18dcbe49959699ca3951b4b6562716b"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ad18dcbe49959699ca3951b4b6562716b">veda_wallet_get_token_json_by_id</a> (uint64_t wstk, const char *id, char **jtoken, int &amp;jtoken_len)</td></tr>
+<tr class="memdesc:ad18dcbe49959699ca3951b4b6562716b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение json-описания токена по ID.  <a href="#ad18dcbe49959699ca3951b4b6562716b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad18dcbe49959699ca3951b4b6562716b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2c5712e455437ccf708044516f0b09"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a5b2c5712e455437ccf708044516f0b09">veda_wallet_get_comission</a> (int trn_type, uint64_t trn_nominal, uint64_t &amp;comission, uint64_t &amp;percent)</td></tr>
+<tr class="memdesc:a5b2c5712e455437ccf708044516f0b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение комиссии  <a href="#a5b2c5712e455437ccf708044516f0b09">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b2c5712e455437ccf708044516f0b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1de04157813c131d8dd5ff082e4470"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#aaf1de04157813c131d8dd5ff082e4470">veda_wallet_send_transaction</a> (uint64_t wstk, uint64_t &amp;num_trn, int type, const char *wid_recipient, const char *token_mas, uint64_t token_mas_len, const char *token_mas_comission, uint64_t token_mas_comission_len, const char *data=0, uint64_t data_len=0)</td></tr>
+<tr class="memdesc:aaf1de04157813c131d8dd5ff082e4470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание и отправка транзакции (внутри отправка транзакции и отправка токенов)  <a href="#aaf1de04157813c131d8dd5ff082e4470">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf1de04157813c131d8dd5ff082e4470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4194b0443270bf8fda87cc70dd847fad"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a4194b0443270bf8fda87cc70dd847fad">veda_wallet_get_tokens</a> (uint64_t wstk)</td></tr>
+<tr class="memdesc:a4194b0443270bf8fda87cc70dd847fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение своих токенов из сети  <a href="#a4194b0443270bf8fda87cc70dd847fad">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4194b0443270bf8fda87cc70dd847fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594e6a8ae33883010a9e9d133bd2b68a"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a594e6a8ae33883010a9e9d133bd2b68a">veda_wallet_get_X509_attributes</a> (uint64_t wstk, char **jcert)</td></tr>
+<tr class="memdesc:a594e6a8ae33883010a9e9d133bd2b68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение сертификата в виде json-массива  <a href="#a594e6a8ae33883010a9e9d133bd2b68a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a594e6a8ae33883010a9e9d133bd2b68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c6aeb8b8df36a18509be2411c0fb43"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a35c6aeb8b8df36a18509be2411c0fb43">veda_wallet_change_wallet_password_codeword</a> (uint64_t wstk, const char *password, int passwordlen, const char *codeword, int codewordlen)</td></tr>
+<tr class="memdesc:a35c6aeb8b8df36a18509be2411c0fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение пароля и кодового слова кошелька  <a href="#a35c6aeb8b8df36a18509be2411c0fb43">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35c6aeb8b8df36a18509be2411c0fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46336c079008051365bc02d528effe7a"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a46336c079008051365bc02d528effe7a">veda_wallet_send_letter_to_support</a> (uint64_t wstk, const char *letter, int letter_size)</td></tr>
+<tr class="memdesc:a46336c079008051365bc02d528effe7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение пароля и кодового слова кошелька  <a href="#a46336c079008051365bc02d528effe7a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a46336c079008051365bc02d528effe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1814584d23b4705a168417177f138835"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a1814584d23b4705a168417177f138835">veda_wallet_is_cryptobox_valid</a> (const char *cryptobox_path, int cryptobox_path_len, const char *password, int passwordlen, const char *codeword, int codewordlen)</td></tr>
+<tr class="memdesc:a1814584d23b4705a168417177f138835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на валидность криптоконтейнера  <a href="#a1814584d23b4705a168417177f138835">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1814584d23b4705a168417177f138835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79382e1871c43070c7b9e10a913ed810"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a79382e1871c43070c7b9e10a913ed810">veda_wallet_deploy_contract</a> (uint64_t wstk, const char *jext, int jext_len, const char *jcms, int jcms_len, uint64_t num_trn, const char *data=0, int data_len=0)</td></tr>
+<tr class="memdesc:a79382e1871c43070c7b9e10a913ed810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавляет запись в БД SQLITE.  <a href="#a79382e1871c43070c7b9e10a913ed810">Подробнее...</a><br /></td></tr>
+<tr class="separator:a79382e1871c43070c7b9e10a913ed810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dde68c633f4d055a2e273ca717c386"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a18dde68c633f4d055a2e273ca717c386">veda_wallet_get_contract_list</a> (uint64_t wstk, char **jmas, int &amp;jmas_len)</td></tr>
+<tr class="memdesc:a18dde68c633f4d055a2e273ca717c386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка контрактов из сети  <a href="#a18dde68c633f4d055a2e273ca717c386">Подробнее...</a><br /></td></tr>
+<tr class="separator:a18dde68c633f4d055a2e273ca717c386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf140449c3f441d3efd512d2f317ad4b"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#abf140449c3f441d3efd512d2f317ad4b">veda_wallet_run_contract</a> (uint64_t wstk, uint64_t &amp;num_trn, int type, const char *wid_recipient, const char *token_mas, uint64_t token_mas_len, const char *token_mas_comission, uint64_t token_mas_comission_len, const char *extension, uint64_t extension_len, const char *data=0, uint64_t data_len=0)</td></tr>
+<tr class="memdesc:abf140449c3f441d3efd512d2f317ad4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка транзакции на контракт (внутри отправка транзакции и отправка токенов)  <a href="#abf140449c3f441d3efd512d2f317ad4b">Подробнее...</a><br /></td></tr>
+<tr class="separator:abf140449c3f441d3efd512d2f317ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf627ad33acfd7519bbd220b0d4b031"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#aadf627ad33acfd7519bbd220b0d4b031">veda_wallet_exchange_token</a> (uint64_t wstk, uint64_t &amp;num_trn, int type, const char *wid_recipient, const char *jtoken_mas, int jtokenmas_len, const char *jnominal, int jnominal_len, const char *data=0, int data_len=0)</td></tr>
+<tr class="memdesc:aadf627ad33acfd7519bbd220b0d4b031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка транзакции на контракт (внутри отправка транзакции и отправка токенов)  <a href="#aadf627ad33acfd7519bbd220b0d4b031">Подробнее...</a><br /></td></tr>
+<tr class="separator:aadf627ad33acfd7519bbd220b0d4b031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d858d4d4bd677ed1bcb9cd1338e10"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#afb9d858d4d4bd677ed1bcb9cd1338e10">veda_wallet_create_marked_tokens</a> (uint64_t wstk, uint64_t &amp;num_trn, char *name_token, int count, char *wid_recipient, char *token_cms_mas, int token_cms_mas_len, int cypher=0, char *rsakey=0x0, int rsakeylen=0)</td></tr>
+<tr class="memdesc:afb9d858d4d4bd677ed1bcb9cd1338e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание цветных токенов (внутри отправка транзакции и отправка токенов)  <a href="#afb9d858d4d4bd677ed1bcb9cd1338e10">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb9d858d4d4bd677ed1bcb9cd1338e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bfe236a8f682ffe89b941fa10df36ac"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a9bfe236a8f682ffe89b941fa10df36ac">veda_wallet_decrypt_marked_token</a> (uint64_t wstk, const char *token, char **data, int &amp;data_len)</td></tr>
+<tr class="memdesc:a9bfe236a8f682ffe89b941fa10df36ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дешифрование маркированного токена  <a href="#a9bfe236a8f682ffe89b941fa10df36ac">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9bfe236a8f682ffe89b941fa10df36ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b8e5f84288a7fac5591b58f399c70c"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a68b8e5f84288a7fac5591b58f399c70c">veda_wallet_execute_contract_func</a> (uint64_t wstk, const char *_CID, const char *_metod_call, uint64_t _metod_call_len, const char *_params, uint64_t _params_len, char **_answer_contract, uint64_t *_answer_contract_len)</td></tr>
+<tr class="memdesc:a68b8e5f84288a7fac5591b58f399c70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызов статического метода контракта  <a href="#a68b8e5f84288a7fac5591b58f399c70c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a68b8e5f84288a7fac5591b58f399c70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cd332524e77ffdadf2bf267ae14cb1"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ac5cd332524e77ffdadf2bf267ae14cb1">veda_wallet_get_rsa_pub_key</a> (uint64_t wstk, const char *wid, char **rsapubkey, int &amp;rsapubkey_len)</td></tr>
+<tr class="memdesc:ac5cd332524e77ffdadf2bf267ae14cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение RSA ключа шифрования по wid.  <a href="#ac5cd332524e77ffdadf2bf267ae14cb1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac5cd332524e77ffdadf2bf267ae14cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39a7bc19e6ca8af9b8f40eef1f13fa5"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#ad39a7bc19e6ca8af9b8f40eef1f13fa5">veda_wallet_get_gost_pub_key</a> (uint64_t wstk, const char *wid, char **gostpubkey, int &amp;gostpubkey_len)</td></tr>
+<tr class="memdesc:ad39a7bc19e6ca8af9b8f40eef1f13fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение публичного GOST ключа по wid.  <a href="#ad39a7bc19e6ca8af9b8f40eef1f13fa5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad39a7bc19e6ca8af9b8f40eef1f13fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d4c0beaafde81d2fd2d34b6b5b2651"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a93d4c0beaafde81d2fd2d34b6b5b2651">veda_wallet_edit_marked_token_by_id</a> (uint64_t wstk, const char *id, const char *recipient, char *color_name, int color_name_len)</td></tr>
+<tr class="memdesc:a93d4c0beaafde81d2fd2d34b6b5b2651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменение цветных полей токенов  <a href="#a93d4c0beaafde81d2fd2d34b6b5b2651">Подробнее...</a><br /></td></tr>
+<tr class="separator:a93d4c0beaafde81d2fd2d34b6b5b2651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4faf1e44cbacca9f37383ebf10747ff2"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a4faf1e44cbacca9f37383ebf10747ff2">veda_wallet_check_token_sign</a> (uint64_t wstk, const char *id)</td></tr>
+<tr class="memdesc:a4faf1e44cbacca9f37383ebf10747ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка подписи токена  <a href="#a4faf1e44cbacca9f37383ebf10747ff2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4faf1e44cbacca9f37383ebf10747ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71d258d1dfd9f3d2dc730be154785d9"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#af71d258d1dfd9f3d2dc730be154785d9">veda_wallet_get_email</a> (uint64_t wstk, const char *wid, char **email, int &amp;email_len)</td></tr>
+<tr class="memdesc:af71d258d1dfd9f3d2dc730be154785d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение EMAIL по wid.  <a href="#af71d258d1dfd9f3d2dc730be154785d9">Подробнее...</a><br /></td></tr>
+<tr class="separator:af71d258d1dfd9f3d2dc730be154785d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b7fd27fd24a7fca486f2032aaa6ead"><td class="memItemLeft" align="right" valign="top">DLL_IMPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libvedawallet_8h.html#a20b7fd27fd24a7fca486f2032aaa6ead">veda_wallet_get_wid_list_by_email</a> (uint64_t wstk, const char *email, char **widlist, int &amp;widlist_len)</td></tr>
+<tr class="memdesc:a20b7fd27fd24a7fca486f2032aaa6ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение списка wid по EMAIL.  <a href="#a20b7fd27fd24a7fca486f2032aaa6ead">Подробнее...</a><br /></td></tr>
+<tr class="separator:a20b7fd27fd24a7fca486f2032aaa6ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Функции кошелька </p>
+<p>Заголовочный файл для использования библиотеки API-функций работы с VEDA PLATFORM </p><dl class="section author"><dt>Автор</dt><dd>Veda team </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>Июнь 2018 года </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ac98b84ab3ac5a3906e5ea6fd3665e35e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_authorization </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cryptobox_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cryptobox_name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pass_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secret_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Авторизация кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_name</td><td>имя файла криптоконтейнера - освободить память функцией veda_wallet_CryptoBoxFree (при logout) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_name_len</td><td>длина имени файла криптоконтейнера </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>пароль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass_len</td><td>длина пароля </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret</td><td>кодовое слово </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td>длина кодового слова </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>код результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35c6aeb8b8df36a18509be2411c0fb43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_change_wallet_password_codeword </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>passwordlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codeword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codewordlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение пароля и кодового слова кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>новый пароль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td>длина пароля </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codeword</td><td>кодовое слово </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codewordlen</td><td>длина кодового слова </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4faf1e44cbacca9f37383ebf10747ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_check_token_sign </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка подписи токена </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>идентификатор токена </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ad5204b274111115cecef9f4e7926db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_close_connection </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Закрытие соединения с нодой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afb9d858d4d4bd677ed1bcb9cd1338e10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_create_marked_tokens </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>num_trn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name_token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>wid_recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>token_cms_mas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>token_cms_mas_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cypher</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rsakey</em> = <code>0x0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rsakeylen</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание цветных токенов (внутри отправка транзакции и отправка токенов) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name_token</td><td>название токена </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>количество токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid_recipient</td><td>адрес получателя (64 байта) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_cms_mas</td><td>json массив комиссионных токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_cms_mas_len</td><td>размер token_cms_mas (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cypher</td><td>признак шифрования поля color </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rsakey</td><td>публичный ключ RSA получателя токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rsakeylen</td><td>размер ключа (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41f8dcba6fb87380a5173490c4943e43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_CryptoBoxDropBox </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаление файла криптоконтейнера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька (8 байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adfd5e002c57bb7a2ae3c3be41b4ef938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_CryptoBoxFree </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Освобождение дескриптора криптоконтейнера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9bfe236a8f682ffe89b941fa10df36ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_decrypt_marked_token </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дешифрование маркированного токена </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>токен, json-массив </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>дешифрованные данные </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data_len</td><td>размер данных </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79382e1871c43070c7b9e10a913ed810"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_deploy_contract </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jext_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jcms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jcms_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_trn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_len</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавляет запись в БД SQLITE. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jext</td><td>JSON массив с котнрактом и методами </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jext_len</td><td>длина jext </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jcms</td><td>JSON массив с токенами </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jcms_len</td><td>длина jcms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>поле data - текстовое поле в транзакции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>размер data (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки, или 0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a93d4c0beaafde81d2fd2d34b6b5b2651"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_edit_marked_token_by_id </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>color_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color_name_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение цветных полей токенов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>идентификатор токена </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recipient</td><td>WID получателя </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color_name</td><td>поле color_name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color_name_len</td><td>размер color_name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aadf627ad33acfd7519bbd220b0d4b031"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_exchange_token </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>num_trn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid_recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jtoken_mas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jtokenmas_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>jnominal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jnominal_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_len</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправка транзакции на контракт (внутри отправка транзакции и отправка токенов) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>тип транзакции (TRN_EXCHANGE) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid_recipient</td><td>адрес получателя (64 байта) - CID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jtoken_mas</td><td>json массив старых токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jtokenmas_len</td><td>размер массива токенов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jnominal</td><td>json массив новых номиналов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jnominal_len</td><td>размер массива новых номиналов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>поле data - текстовое поле в транзакции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>размер data (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68b8e5f84288a7fac5591b58f399c70c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_execute_contract_func </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_CID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_metod_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>_metod_call_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>_params_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>_answer_contract</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>_answer_contract_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вызов статического метода контракта </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_CID</td><td>идентификатор контракта </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_metod_call</td><td>наименование метода </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_metod_call_len</td><td>рамзер _metod_call </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_params</td><td>параметры метода _metod_call </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_params_len</td><td>размер _params </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_answer_contract</td><td>ответ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_answer_contract_len</td><td>размер _answer_contract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51df09e72e72e9e1a6df9efe5adb05ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_form_token_mas </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>token_mas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token_mas_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Формирование массива токенов из криптоконтейнера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas</td><td>json массив токенов - освободить как станет ненужным функцией veda_wallet_free_param (при logout) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas_len</td><td>размер массива токенов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a47991afd17d346babef0e72706bdc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_free </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>wstk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Освобождение кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9943ff331b25d7896958eb83818af84b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_free_param_str </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Освобождение памяти </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>Строка (память выделена в *param) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a43edaf2962a1f9ce1d0f507637fbb3e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_cnt_trn_out </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid_sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>num_trn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение номера последней исходящей транзакиис аккаунта (с кошелька) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid_sender</td><td>адрес отправителя (64 байта) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b2c5712e455437ccf708044516f0b09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_comission </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>trn_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>trn_nominal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>comission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение комиссии </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trn_type</td><td>тип транзакции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">trn_nominal</td><td>номинал, участвующий в транзакции </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">comission</td><td>комиссия </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">precent</td><td>процент от общего номинала, участвующего в транзакции, который составляет комиссия </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18dde68c633f4d055a2e273ca717c386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_contract_list </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>jmas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>jmas_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения списка контрактов из сети </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jmas</td><td>JSON массив со списком контрактов (см формат) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jmas_len</td><td>длина jmas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки, или 0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af71d258d1dfd9f3d2dc730be154785d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_email </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>email</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>email_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение EMAIL по wid. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>идентификатор кошелька (адрес) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">email</td><td>email-адрес </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">email_len</td><td>размер email </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad39a7bc19e6ca8af9b8f40eef1f13fa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_gost_pub_key </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>gostpubkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>gostpubkey_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение публичного GOST ключа по wid. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>идентификатор кошелька (адрес) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">gostpubkey</td><td>GOST ключ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">gostpubkey_len</td><td>размер gostpubkey </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5cd332524e77ffdadf2bf267ae14cb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_rsa_pub_key </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>rsapubkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>rsapubkey_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение RSA ключа шифрования по wid. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>идентификатор кошелька (адрес получателя) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rsapubkey</td><td>RSA ключ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rsapubkey_len</td><td>размер rsapubkey </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad18dcbe49959699ca3951b4b6562716b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_token_json_by_id </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>jtoken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>jtoken_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение json-описания токена по ID. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>идентификатор токена </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jtoken</td><td>токен в виде json - освободить как станет ненужным veda_wallet_free_param_str </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jtoken_len</td><td>размер jtoken (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4194b0443270bf8fda87cc70dd847fad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_tokens </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение своих токенов из сети </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха (токены получены) VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b5efe60e6478294631bdaa3caaab4cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_trn_json_by_tid </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>tid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>jtrn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>jtrn_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение json-описания транзакции по ID. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>идентификатор транзакции </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jtrn</td><td>транзакция в виде json - освободить как станет ненужным veda_wallet_free_param_str </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jtrn_len</td><td>размер jtrn (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afff45b53a2942cdd9de005611840d7ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_trn_list_by_wid </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>trn_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>trn_list_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение списка транзакций по ID кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">trn_list</td><td>массив транзакций в виде json - освободить как станет ненужным veda_wallet_free_param_str </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">trn_list_size</td><td>размер массива транзакций (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5a0b0fa1aa7a0cac344686dec06d42a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_trn_list_from_local_db </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>trn_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>trn_list_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение списка транзакций из своего хранилища </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">trn_list</td><td>массив транзакций в виде json - освободить как станет ненужным veda_wallet_free_param_str </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">trn_list_size</td><td>размер массива транзакций (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20b7fd27fd24a7fca486f2032aaa6ead"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_wid_list_by_email </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>email</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>widlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>widlist_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение списка wid по EMAIL. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">email</td><td>email-адрес </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">widlist</td><td>список адресов (json) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">widlist_len</td><td>размер widlist </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a594e6a8ae33883010a9e9d133bd2b68a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_get_X509_attributes </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>jcert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение сертификата в виде json-массива </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">jcert</td><td>json-массив полей сертификата - освободить как станет ненужным veda_wallet_free_param_str </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ed6d056a5ad24653a44706e57da8ca3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_init </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>hlib</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>wstk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация кошелька перед инициализацией кошелька убедитесь, что была проведена инициализация библиотеки veda_wallet_init_crypto_engine. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hlib</td><td>дескриптор библиотеки </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>директория хранения криптоконтейнеров </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>ip-адрес НОДы (из настроек приложения) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a538969a4179a4d8f1b5e40db55c6d82a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_init_balance </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_len_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>token_mas_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token_mas_len_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>balance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>marked_token_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка токенов и запрос баланса </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_in</td><td>json массив токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_len_in</td><td>размер массива токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas_out</td><td>json массив токенов - освободить как станет ненужным функцией veda_wallet_free_param (при logout) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas_len_out</td><td>размер массива токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">balance</td><td>баланс кошелька - освободить как станет ненужным функцией veda_wallet_free_param </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_cnt</td><td>количество немаркированных токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">marked_token_cnt</td><td>количество маркированных токенов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab05f40a5843d5a840b384783e45ffd34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_init_library </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>hlib</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация библиотеки VEDA_WALLET вызывается один раз перед выполнением основных инструкий программы (например, в начале функции main()) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hlib</td><td>дескриптор библиотеки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1814584d23b4705a168417177f138835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_is_cryptobox_valid </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cryptobox_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cryptobox_path_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>passwordlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codeword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codewordlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на валидность криптоконтейнера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_path</td><td>путь к криптоконтейнеру </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_path_len</td><td>длина пути </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>пароль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">passwordlen</td><td>длина пароля </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codeword</td><td>кодовое слово </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codewordlen</td><td>длина кодового слова </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ae0bb1b2d62e2c8ef8ee0a4ee6f2230"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_open </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cryptobox_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cryptobox_name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pass_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secret_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Открыть локальный кошелек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_name</td><td>имя файла криптоконтейнера - освободить память функцией veda_wallet_CryptoBoxFree (при logout) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cryptobox_name_len</td><td>длина имени файла криптоконтейнера </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>пароль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass_len</td><td>длина пароля </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret</td><td>кодовое слово </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td>длина кодового слова </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a5399687c1e74abba377f464bdaa2b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_refresh_balance </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_len_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>token_mas_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token_mas_len_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>balance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>token_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>marked_token_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновление баланса кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_in</td><td>json массив токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_len_in</td><td>размер массива токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas_out</td><td>json массив токенов - освободить как станет ненужным функцией veda_wallet_free_param (при logout) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_mas_len_out</td><td>размер массива токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">balance</td><td>баланс кошелька - освободить как станет ненужным функцией veda_wallet_free_param </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">token_cnt</td><td>количество немаркированных токенов </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">marked_token_cnt</td><td>количество маркированных токенов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха LIBVEDAWALLET_NOERROR LIBVEDAWALLET_ERROR_ELNFOUND - нет токенов Если LIBVEDAWALLET_NOERROR == 0 и (token_mas_out == 0 или token_mas_len_out == 0), то работаем с массивом token_mas_in - он актуальный, иначе работаем с token_mas_out </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a33485d857e6d9d2f210bff01c23295cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_register_1 </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pass_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secret_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cert_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регистрация кошелька этап 1. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>пароль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass_len</td><td>длина пароля </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret</td><td>кодовое слово </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">secret_len</td><td>длина кодового слова </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert</td><td>поля сертификата в формате json (строка) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert_len</td><td>длина поля cert </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>код результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a56a7c89187058f626f11ba0536a32aca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_register_2 </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>email_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регистрация кошелька этап 2. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">email_code</td><td>код подтверждения </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">code_len</td><td>длина кода подтверждения </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>код результата </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR В случае ошибки необходимо вызвать функции veda_wallet_CryptoBoxFree и veda_wallet_CryptoBoxDropBox </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf140449c3f441d3efd512d2f317ad4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_run_contract </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>num_trn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid_recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas_comission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_comission_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>extension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>extension_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>data_len</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отправка транзакции на контракт (внутри отправка транзакции и отправка токенов) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>тип транзакции (TRN_RUNCONTRACT) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid_recipient</td><td>адрес получателя (64 байта) - CID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas</td><td>json массив токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_len</td><td>размер массива токенов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission</td><td>json массив комиссионных токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission_len</td><td>размер массива комиссионных токенов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission</td><td>json массив методов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission_len</td><td>размер массива методов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>поле data - текстовое поле в транзакции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>размер data (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46336c079008051365bc02d528effe7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_send_letter_to_support </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>letter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>letter_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменение пароля и кодового слова кошелька </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">letter</td><td>текст пользовательского обращения в службу поддержки </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">letter_size</td><td>длина текста </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf1de04157813c131d8dd5ff082e4470"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_send_transaction </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>wstk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>num_trn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>wid_recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>token_mas_comission</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>token_mas_comission_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>data_len</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание и отправка транзакции (внутри отправка транзакции и отправка токенов) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wstk</td><td>дескриптор стека кошелька </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_trn</td><td>счётчик исходящих транзакций с аккаунта (с кошелька) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>тип транзакции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid_recipient</td><td>адрес получателя (64 байта) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas</td><td>json массив токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_len</td><td>размер массива токенов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission</td><td>json массив комиссионных токенов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token_mas_comission_len</td><td>размер массива комиссионных токенов (байт) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>строка для помещения в транзакцию </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_len</td><td>размер строки (байт) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3be1c1c02ea8dbf150db2e340f3318d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DLL_IMPORT int veda_wallet_stop_library </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>hlib</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Освобождение библиотеки VEDA_WALLET вызывается один раз перед завершением программы (например, в конце функции main()) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hlib</td><td>дескриптор библиотеки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки, в случае успеха VEDAWALLET_NOERROR </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

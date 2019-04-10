@@ -1,0 +1,19 @@
+LIBS=../../libcrypto
+SOURCE[../../libcrypto]=\
+        eng_err.c eng_lib.c eng_list.c eng_init.c eng_ctrl.c \
+        eng_table.c eng_pkey.c eng_fat.c eng_all.c \
+        tb_rsa.c tb_dsa.c tb_dh.c tb_rand.c \
+        tb_cipher.c tb_digest.c tb_pkmeth.c tb_asnmth.c tb_eckey.c \
+        eng_openssl.c eng_cnf.c eng_dyn.c \
+        eng_rdrand.c\
+	e_gost_err.c gost_crypt.c gost_grasshopper_core.c \
+	gost_ctl.c gost_md2012.c \
+	gost_ec_keyx.c gost_grasshopper_defines.c gost_grasshopper_precompiled.c \
+	gost_md.c gost89.c gost_ec_sign.c gosthash.c gost_params.c \
+	gost_eng.c gost_grasshopper_galois_precompiled.c  gosthash2012.c gost_pmeth.c \
+	gost_ameth.c  gost_grasshopper_cipher.c gost_keywrap.c \
+	gost_asn1.c gost_grasshopper_mac.c
+
+IF[{- !$disabled{devcryptoeng} -}]
+  SOURCE[../../libcrypto]=eng_devcrypto.c
+ENDIF
