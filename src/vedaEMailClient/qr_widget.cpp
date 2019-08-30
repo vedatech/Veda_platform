@@ -13,6 +13,11 @@ qr_widget::~qr_widget()
     delete ui;
 }
 
+void qr_widget::paintQRCode(const QVector<bool> &blacks, const int side_size)
+{
+
+}
+
 void qr_widget::paintEvent(QPaintEvent *e)
 {
 //    QPainter p(this);
@@ -30,4 +35,11 @@ void qr_widget::paintEvent(QPaintEvent *e)
 //    }
 
     QWidget::paintEvent(e);
+}
+
+void qr_widget::resizeQRpolygon(int remains)
+{
+    maxside = ((this->height() / 10) * 7) - 50 - remains;
+    xasset = (this->width() - maxside) / 2;
+    yasset = (((this->height() / 10) * 7) - maxside) / 2;
 }

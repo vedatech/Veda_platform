@@ -53,7 +53,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="balance_label">
            <property name="text">
             <string>6</string>
            </property>
@@ -99,12 +99,12 @@
          <item>
           <widget class="QLabel" name="label_4">
            <property name="text">
-            <string>Messages available</string>
+            <string>Messages available:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="messages_available_label">
            <property name="text">
             <string>3</string>
            </property>
@@ -148,7 +148,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_6">
+          <widget class="QLabel" name="vdn_per_msg_label">
            <property name="text">
             <string>1</string>
            </property>
@@ -222,7 +222,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="WID_lineEdit">
        <property name="text">
         <string>23CQ4UNLQH8PE2AYTUCW13QNMS522BBZJNLSMMMVE4WNGUDIWVIGWX6IARFSEC7P</string>
        </property>
@@ -246,6 +246,16 @@
         </size>
        </property>
       </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="error_label">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -272,6 +282,19 @@
          </property>
          <property name="text">
           <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="getMoreMessages_Button">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Get more messages</string>
          </property>
         </widget>
        </item>

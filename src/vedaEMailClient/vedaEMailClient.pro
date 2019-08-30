@@ -5,13 +5,28 @@
 #-------------------------------------------------
 
 QT       += core gui
+CONFIG += c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = vedaEMailClient
+TARGET = VedaEMail
 TEMPLATE = app
 
 DESTDIR = ../../bin/
+
+DEFINES +=  VEDA_PROTO_BUF
+
+macx{
+    DEFINES += MACOS
+    QMAKE_CXXFLAGS += -fdeclspec
+    ICON = ./Resources/veda_app_icon.icns
+    #QMAKE_INFO_PLIST = Info.plist
+}
+
+win32{
+    DEFINES += WINDOWS
+    RC_ICONS += ./Resources/veda_app_icon.ico
+}
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -26,19 +41,33 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 INCLUDEPATH += $$PWD/../libvedawallet
 INCLUDEPATH += $$PWD/../libvedainiwrapper
+INCLUDEPATH += $$PWD/QR_code_lib
+INCLUDEPATH += $$PWD/../libvedatransactions
+INCLUDEPATH +=  ../protobuf-3.6.1/src/
 
-unix{
+unix:!macx{
     DEFINES += LINUX_NON_MACOS
-    LIBS += -L.. -L. -Llib -L../lib -L../../lib -lvedawallet -lvedainiwrapper
+    LIBS += -L.. -L. -Llib -L../lib -L../../lib -lvedawallet -lvedainiwrapper -lprotobuf #-lvedatransactions
     LIBS += -Wl,-rpath,. -Wl,-rpath,.. -Wl,-rpath,lib -Wl,-rpath,../lib -Wl,-rpath,../../lib
     LIBS += -Wl,-rpath,$(DEFAULT_LIB_INSTALL_PATH)
     LIBS += -fpic
 }
+macx{
+    LIBS += -L.. -L. -L./lib -L../lib -L../../lib -lvedawallet -lvedainiwrapper
+    LIBS += -fpic
+}
 
-CONFIG += c++11
+win32{
+    LIBS += -L.. -L. -Llib -L../lib -L../../lib -lvedawallet -lvedainiwrapper
+    LIBS += -lws2_32
+    LIBS += -fpic
+}
 
 SOURCES += \
+    ../libvedatransactions/token.pb.cc \
+    fileattachment.cpp \
         main.cpp \
+    mainwindow.cpp \
     vedaEMailClient.cpp \
     registration.cpp \
     main_menu.cpp \
@@ -56,9 +85,13 @@ SOURCES += \
     loading_screen.cpp \
     server_functions.cpp \
     begin_f.cpp \
-    balance_f.cpp
+    balance_f.cpp \
+    outcoming_list_item_label.cpp
 
 HEADERS += \
+    ../libvedatransactions/token.pb.h \
+    fileattachment.h \
+    mainwindow.h \
     vedaEMailClient.h \
     registration.h \
     main_menu.h \
@@ -75,9 +108,12 @@ HEADERS += \
     qr_widget.h \
     loading_screen.h \
     begin_f.h \
-    balance_f.h
+    balance_f.h \
+    outcoming_list_item_label.h
 
 FORMS += \
+    fileattachment.ui \
+    mainwindow.ui \
     vedaEMailClient.ui \
     registration.ui \
     main_menu.ui \
@@ -94,7 +130,8 @@ FORMS += \
     qr_widget.ui \
     loading_screen.ui \
     begin_f.ui \
-    balance_f.ui
+    balance_f.ui \
+    outcoming_list_item_label.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

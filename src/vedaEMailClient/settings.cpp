@@ -7,8 +7,10 @@ settings::settings(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //в данном приложении не актуально
-    ui->connection_Button->hide();
+    //beta
+//    ui->connection_Button->hide();
+//    ui->information_Button->hide();
+//    ui->general_Button->hide();
 }
 
 settings::~settings()

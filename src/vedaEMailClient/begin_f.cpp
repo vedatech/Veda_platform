@@ -7,6 +7,9 @@ begin_f::begin_f(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->error_label->hide();
+
+    ui->password_lineEdit->setEchoMode(QLineEdit::Password);
+    ui->secret_lineEdit->setEchoMode(QLineEdit::Password);
 }
 
 begin_f::~begin_f()
@@ -32,4 +35,19 @@ void begin_f::show_all_completions()
         completer->complete();
         completer->setCompletionMode(QCompleter::PopupCompletion);
     }
+}
+
+void begin_f::on_login_lineEdit_returnPressed()
+{
+    ui->password_lineEdit->setFocus();
+}
+
+void begin_f::on_password_lineEdit_returnPressed()
+{
+    ui->secret_lineEdit->setFocus();
+}
+
+void begin_f::on_secret_lineEdit_returnPressed()
+{
+    ui->signIn_Button->click();
 }

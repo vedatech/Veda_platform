@@ -7,6 +7,9 @@ settings_security::settings_security(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->spinBox->setDisabled(true);
+
+    //beta
+    ui->dualFA_Button->hide();
 }
 
 settings_security::~settings_security()
@@ -26,7 +29,7 @@ void settings_security::toggle_autologout(bool on)
     }
 }
 
-void settings_security::on_pushButton_clicked()
-{
-    toggle_autologout(!autologout);
-}
+//void settings_security::on_pushButton_clicked()
+//{
+//    toggle_autologout(!autologout);
+//}

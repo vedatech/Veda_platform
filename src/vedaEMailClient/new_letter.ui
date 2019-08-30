@@ -81,10 +81,23 @@
            <height>40</height>
           </size>
          </property>
+         <property name="placeholderText">
+          <string>Double click me, or type email address, or type account ID</string>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QTextEdit" name="message_textEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="error_label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">

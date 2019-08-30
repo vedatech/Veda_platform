@@ -6,6 +6,10 @@ read_letter::read_letter(QWidget *parent) :
     ui(new Ui::read_letter)
 {
     ui->setupUi(this);
+
+    //beta
+    ui->delete_Button->hide();
+    ui->file_Button->hide();
 }
 
 read_letter::~read_letter()

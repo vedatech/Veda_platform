@@ -34,7 +34,7 @@
       </font>
      </property>
      <property name="text">
-      <string>[QR CODE]</string>
+      <string/>
      </property>
     </widget>
    </item>

@@ -79,7 +79,7 @@
                  </size>
                 </property>
                 <property name="placeholderText">
-                 <string>login</string>
+                 <string>Login (Double click me!)</string>
                 </property>
                </widget>
               </item>
@@ -105,7 +105,7 @@
                  </size>
                 </property>
                 <property name="placeholderText">
-                 <string>password</string>
+                 <string>Password</string>
                 </property>
                </widget>
               </item>
@@ -131,7 +131,7 @@
                  </size>
                 </property>
                 <property name="placeholderText">
-                 <string>secret phrase</string>
+                 <string>Secret phrase</string>
                 </property>
                </widget>
               </item>

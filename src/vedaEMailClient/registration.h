@@ -17,7 +17,7 @@ public:
     Ui::registration *ui;
 
 private slots:
-    void on_mail_lineEdit_textChanged(const QString &arg1);
+//    void on_mail_lineEdit_textChanged(const QString &arg1);
 
 private:
 };

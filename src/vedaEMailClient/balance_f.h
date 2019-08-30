@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "qr_widget.h"
+#include <QClipboard>
 
 namespace Ui {
 class balance_f;
@@ -17,8 +18,12 @@ public:
     ~balance_f();
     Ui::balance_f *ui;
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     qr_widget *widget;
+    QClipboard *clipboard;
 };
 
 #endif // BALANCE_H

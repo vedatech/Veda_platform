@@ -6,6 +6,11 @@ new_letter::new_letter(QWidget *parent) :
     ui(new Ui::new_letter)
 {
     ui->setupUi(this);
+
+    //beta
+    ui->rich_text_Button->hide();
+    ui->link_Button->hide();
+    ui->attach_Button->hide();
 }
 
 new_letter::~new_letter()
@@ -31,6 +36,12 @@ void new_letter::show_all_completions()
         completer->complete();
         completer->setCompletionMode(QCompleter::PopupCompletion);
     }
+}
+
+void new_letter::clear()
+{
+    ui->message_textEdit->clear();
+    ui->recipient_lineEdit->clear();
 }
 
 void new_letter::on_recipient_lineEdit_textChanged(const QString &arg1)

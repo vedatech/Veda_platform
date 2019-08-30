@@ -9,6 +9,8 @@ balance_f::balance_f(QWidget *parent) :
     widget = new (std::nothrow)qr_widget(this);
 
     ui->QRhorizontalLayout->insertWidget(1,widget);
+
+    clipboard = QApplication::clipboard();
 }
 
 balance_f::~balance_f()
@@ -16,3 +18,8 @@ balance_f::~balance_f()
     delete ui;
 }
 
+
+void balance_f::on_pushButton_2_clicked()
+{
+    clipboard->setText(ui->WID_lineEdit->text());
+}

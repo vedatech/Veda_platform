@@ -6,6 +6,9 @@ settings_account::settings_account(QWidget *parent) :
     ui(new Ui::settings_account)
 {
     ui->setupUi(this);
+
+    //beta
+    ui->clear_local_address_book_Button->hide();
 }
 
 settings_account::~settings_account()

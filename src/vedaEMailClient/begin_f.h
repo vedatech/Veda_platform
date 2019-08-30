@@ -22,6 +22,12 @@ public:
 
 private slots:
 
+    void on_login_lineEdit_returnPressed();
+
+    void on_password_lineEdit_returnPressed();
+
+    void on_secret_lineEdit_returnPressed();
+
 private:
     QCompleter *completer = nullptr;
 };

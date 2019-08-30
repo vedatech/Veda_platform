@@ -18,6 +18,7 @@ public:
     Ui::new_letter *ui;
     void set_completer(const QStringList &list);
     void show_all_completions();
+    void clear();
 
 private slots:
     void on_recipient_lineEdit_textChanged(const QString &arg1);

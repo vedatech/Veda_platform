@@ -21,7 +21,7 @@ public:
     void toggle_autologout(bool on);
 
 private slots:
-    void on_pushButton_clicked();
+//    void on_pushButton_clicked();
 
 private:
     bool autologout = false;
